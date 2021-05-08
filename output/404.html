@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- General author information -->
+    <meta name="author" content="John Hellion" />
+
+    <!-- General description information when available -->
+    <!-- Otherwise fallback to the site description -->
+<meta name="description" content="
+A curated library of resources on idleness
+" />
+    <!-- OG data guaranteed to exist, all documents -->
+    <meta property="og:site_name" content="idle.cafe" />
+    <meta property="og:type" content="article" />
+
+    <!-- OG data guaranteed to exist, article -->
+
+    <!-- OG data guaranteed to exist, page -->
+    <meta property="og:title" content="Content not found" />
+    <meta property="og:url" content="https://idle.cafe/404" />
+
+    <!-- OG description  -->
+<meta name="og:description" content="
+A curated library of resources on idleness
+" />
+    <!-- OG image -->
+
+    <!-- Twitter card guaranteed -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@johnhellion" />
+    <meta name="twitter:creator" content="@johnhellion" />
+
+    <!-- Twitter card title -->
+<meta name="twitter:title" content="Content not found" />
+
+    <!-- Twitter card description -->
+<meta name="twitter:description" content="
+A curated library of resources on idleness
+" />
+    <!-- Twitter image -->
+
+    <!-- Canonical article -->
+
+    <!-- Canonical page -->
+    <link rel="canonical" href="https://idle.cafe/404" />
+
+    <!-- More files -->
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- CSS -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet"> 
+    <link
+      rel="prefetch stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/atom-one-light.min.css"
+    />
+    <link
+      rel="prefetch stylesheet"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="prefetch stylesheet" href="/theme/styles.css" />
+
+    <!-- Register our serivce-worker -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+
+      let refreshing = false;
+      navigator.serviceWorker.addEventListener('controllerchange', () => {
+        if (refreshing) return;
+
+        refreshing = true;
+        newVersionToast();
+      });
+    </script>
+
+    <!-- JavaScript bundle, some pages may load more things -->
+    <script defer src="/app.js"></script>
+    
+    <script async defer data-domain="idle.cafe" src="https://stats.idle.cafe/js/index.js"></script>
+    <!-- <script async defer data-domain="idle.cafe" src="https://stats.idle.cafe/js/index.outbound-links.js"></script> -->
+
+    <title>
+      Content not found
+    </title>
+  </head>
+</html>
+<body>
+
+<div>
+  <h1>Content not found</h1>
+
+  <div class="content">
+    <p>Sorry, the page you requested could not be found... 😭</p>
+<p>But don't panic! There is a high chance that the content you are looking for
+<strong>has not been deleted, but only moved</strong>. Please, take a look at the following
+links:</p>
+    <p id="search-result"><i>Loading...</i></p>
+
+    <p><a href="/">← Back to the index</a></p>
+  </div>
+</div>
+
+
+
+<!-- We require api.js to be generated, see the api Pelican plugins -->
+<script src="/api.js"></script>
+<script src="/404.js"></script>
+
+</body>
+
+</html>

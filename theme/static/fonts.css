@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'iA Writer Mono';
+    src: url('fonts/iAWriterMonoS-Regular.woff2') format('woff2'),
+         url('fonts/iAWriterMonoS-Regular.woff') format('woff');
+    font-style: normal;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+  }
+  
+  @font-face {
+    font-family: 'iA Writer Mono';
+    src: url('fonts/iAWriterMonoS-Italic.woff2') format('woff2'),
+         url('fonts/iAWriterMonoS-Italic.woff') format('woff');
+    font-style: italic;
+    font-weight: 100;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+  }
+  
+  @font-face {
+    font-family: 'iA Writer Mono';
+    src: url('fonts/iAWriterMonoS-Bold.woff2') format('woff2'),
+         url('fonts/iAWriterMonoS-Bold.woff') format('woff');
+    font-style: normal;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+  }
+  
+  @font-face {
+    font-family: 'iA Writer Mono';
+    src: url('fonts/iAWriterMonoS-BoldItalic.woff2') format('woff2'),
+         url('fonts/iAWriterMonoS-BoldItalic.woff') format('woff');
+    font-style: italic;
+    font-weight: 700;
+    text-rendering: optimizeLegibility;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+  }
