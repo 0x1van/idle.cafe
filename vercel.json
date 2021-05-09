@@ -32,6 +32,11 @@
       "source": "/thomasjbevan",
       "destination": "https://thomasjbevan.substack.com/", 
       "permanent": true
+    },
+    { 
+      "source": "/johnhellion",
+      "destination": "https://johnhellion.com", 
+      "permanent": true
     }
   ]
 }
