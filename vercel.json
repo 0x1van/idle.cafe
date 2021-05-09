@@ -26,5 +26,13 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    { 
+      "source": "/thomasjbevan",
+      "destination": "https://thomasjbevan.substack.com/", 
+      "permanent": true
+    }
   ]
 }
+
